@@ -1,3 +1,4 @@
+rm -rf /usr/local/source/
 mkdir /usr/local/source/
 cd /usr/local/source/
 apt-get update
@@ -18,31 +19,31 @@ sudo apt-get -f -y install libjsoncpp-dev
 sudo apt-get -f -y install libboost-all-dev
 sudo apt-get -f -y install libflann1.9
 
-rm -rf VTK-8.0.1*
+
 wget http://www.vtk.org/files/release/8.0/VTK-8.0.1.tar.gz
 tar -xf VTK-8.0.1.tar.gz
 cd VTK-8.0.1 
 mkdir build 
 cd build
 cmake ..
-make                                                                   
+make  -j8                                                              
 sudo make install
 
 cd ../../
 
-rm -rf pcl-1.8.1*
+
 wget https://github.com/PointCloudLibrary/pcl/archive/pcl-1.8.1.tar.gz
 tar -xf pcl-1.8.1.tar.gz
 cd pcl-pcl-1.8.1 
 mkdir build 
 cd build
 cmake ..
-make
+make -j8
 sudo make install
 
 cd ../../
 
-rm -rf opencv-3.3.1*
+
 wget http://sourceforge.net/projects/opencvlibrary/files/opencv-unix/3.3.1/opencv-3.3.1.zip
 unzip opencv-3.3.1.zip
 rm opencv-3.3.1.zip
