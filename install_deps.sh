@@ -17,8 +17,15 @@ sudo apt-get -f -y install libtiff5-dev libjasper-dev
 sudo apt-get -f -y install libpng-dev
 sudo apt-get -f -y install libjsoncpp-dev
 sudo apt-get -f -y install libboost-all-dev
-sudo apt-get -f -y install libflann1.9
 
+wget https://github.com/mariusmuja/flann/archive/1.8.5.tar.gz
+tar -zvxf 1.8.5.tar.gz
+cd flann-1.8.5
+mkdir build 
+cd build
+cmake ..
+make  -j8                                                              
+sudo make install
 
 wget http://www.vtk.org/files/release/8.0/VTK-8.0.1.tar.gz
 tar -xf VTK-8.0.1.tar.gz
