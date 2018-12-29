@@ -17,25 +17,31 @@ sudo apt-get -f -y install libjsoncpp-dev
 sudo apt-get -f -y install libboost-all-dev
 sudo apt-get -f -y install libflann1.9
 
+rm -rf VTK-8.0.1*
 wget http://www.vtk.org/files/release/8.0/VTK-8.0.1.tar.gz
 tar -xf VTK-8.0.1.tar.gz
-cd VTK-8.0.1 && mkdir build && cd build
+cd VTK-8.0.1 
+mkdir build 
+cd build
 cmake ..
 make                                                                   
 sudo make install
 
 cd ../../
 
+rm -rf pcl-1.8.1*
 wget https://github.com/PointCloudLibrary/pcl/archive/pcl-1.8.1.tar.gz
 tar -xf pcl-1.8.1.tar.gz
-cd pcl-pcl-1.8.1 && mkdir build && cd build
+cd pcl-pcl-1.8.1 
+mkdir build 
+cd build
 cmake ..
 make
 sudo make install
 
 cd ../../
 
-
+rm -rf opencv-3.3.1*
 wget http://sourceforge.net/projects/opencvlibrary/files/opencv-unix/3.3.1/opencv-3.3.1.zip
 unzip opencv-3.3.1.zip
 rm opencv-3.3.1.zip
@@ -51,7 +57,7 @@ echo "PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig" | sudo tee -a /
 echo "export PKG_CONFIG_PATH" | sudo tee -a /etc/bash.bashrc
 source /etc/bash.bashrc
 cd ../..
-rm -rf opencv-3.3.1
+
 
 
 wget https://github.com/01org/tbb/releases/download/2018_U5/tbb2018_20180618oss_lin.tgz
