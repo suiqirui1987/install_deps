@@ -1,10 +1,10 @@
 mkdir /usr/local/source/
 apt-get update
-sudo apt-get install sudo
-sudo apt-get install vim
-sudo apt-get install git
-sudo apt-get install zip
-sudo apt-get install tar
+sudo apt-get  -f -y install sudo
+sudo apt-get  -f -y install vim
+sudo apt-get  -f -y install git
+sudo apt-get  -f -y install zip
+sudo apt-get  -f -y install tar
 
 sudo apt-get -f -y install libeigen3-dev
 sudo apt-get -f -y install libjpeg62-dev 
