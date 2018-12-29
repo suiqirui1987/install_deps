@@ -1,4 +1,5 @@
 mkdir /usr/local/source/
+cd /usr/local/source/
 apt-get update
 sudo apt-get  -f -y install sudo
 sudo apt-get  -f -y install vim
