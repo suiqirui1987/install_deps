@@ -12,7 +12,7 @@ sudo apt-get  -f -y install g++
 sudo apt-get -f -y install libglu1-mesa-dev freeglut3-dev mesa-common-dev
 sudo apt-get -f -y install libeigen3-dev
 sudo apt-get -f -y install libjpeg62-dev 
-sudo apt-get -f -y install libtiff4-dev libjasper-dev
+sudo apt-get -f -y install libtiff5-dev libjasper-dev
 sudo apt-get -f -y install libpng-dev
 sudo apt-get -f -y install libjsoncpp-dev
 sudo apt-get -f -y install libboost-all-dev
