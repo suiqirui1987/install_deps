@@ -1,4 +1,3 @@
-rm -rf /usr/local/source/
 mkdir /usr/local/source/
 cd /usr/local/source/
 apt-get update
@@ -73,3 +72,5 @@ wget https://github.com/01org/tbb/releases/download/2018_U5/tbb2018_20180618oss_
 tar -zvxf tbb2018_20180618oss_lin.tgz
 rm -rf tbb2018_20180618oss_lin.tgz
 mv tbb2018_20180618oss /usr/local/tbb
+
+rm -rf /usr/local/source/
