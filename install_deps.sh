@@ -2,23 +2,23 @@ rm -rf /usr/local/source/
 mkdir /usr/local/source/
 cd /usr/local/source/
 apt-get update
-sudo apt-get  -f -y install sudo
-sudo apt-get  -f -y install vim
-sudo apt-get  -f -y install git
-sudo apt-get  -f -y install zip
-sudo apt-get  -f -y install tar
-sudo apt-get  -f -y install cmake
-sudo apt-get  -f -y install g++
-sudo apt-get  -f -y install libomp-dev
+apt-get  -f -y install sudo
+apt-get  -f -y install vim
+apt-get  -f -y install git
+apt-get  -f -y install zip
+apt-get  -f -y install tar
+apt-get  -f -y install cmake
+apt-get  -f -y install g++
+apt-get  -f -y install libomp-dev
 
-sudo apt-get -f -y install libglu1-mesa-dev freeglut3-dev mesa-common-dev
-sudo apt-get -f -y install libeigen3-dev
-sudo apt-get -f -y install libjpeg62-dev 
-sudo apt-get -f -y install libtiff-dev
-sudo apt-get -f -y install libtiff5-dev
-sudo apt-get -f -y install libpng-dev
-sudo apt-get -f -y install libjsoncpp-dev
-sudo apt-get -f -y install libboost-all-dev
+apt-get -f -y install libglu1-mesa-dev freeglut3-dev mesa-common-dev
+apt-get -f -y install libeigen3-dev
+apt-get -f -y install libjpeg62-dev 
+apt-get -f -y install libtiff-dev
+apt-get -f -y install libtiff5-dev
+apt-get -f -y install libpng-dev
+apt-get -f -y install libjsoncpp-dev
+apt-get -f -y install libboost-all-dev
 
 wget https://github.com/mariusmuja/flann/archive/1.8.5.tar.gz
 tar -zvxf 1.8.5.tar.gz
@@ -27,7 +27,7 @@ mkdir build
 cd build
 cmake ..
 make  -j18                                                              
-sudo make install
+make install
 
 wget http://www.vtk.org/files/release/8.0/VTK-8.0.1.tar.gz
 tar -xf VTK-8.0.1.tar.gz
@@ -36,7 +36,7 @@ mkdir build
 cd build
 cmake ..
 make  -j18                                                              
-sudo make install
+make install
 
 cd ../../
 
@@ -48,7 +48,7 @@ mkdir build
 cd build
 cmake ..
 make -j18
-sudo make install
+make install
 
 cd ../../
 
